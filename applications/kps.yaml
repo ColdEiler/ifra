@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/ColdEiler/ifra
     targetRevision: main
-    path: apps/kps
+    path: applications/kps
 
   destination:
     server: https://kubernetes.default.svc
