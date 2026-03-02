@@ -5,16 +5,16 @@ metadata:
   namespace: backend
 spec:
   selector:
-   matchLabels:
+    matchLabels:
       app: backend
-	template:
-	    metadata:
-	      labels:
-	        app: backend
-	    spec:
-	      containers:
-	        - name: backend
-	          image: nginx:1.28.1
-	          ports:
-	            - containerPort: 80
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: nginx:1.28.1
+          ports:
+            - containerPort: 80
 
