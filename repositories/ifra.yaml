@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: argocd-ifra-repository
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  type: git
+  name: ifra
+  project: default
+  url: git@github.com:ColdEiler/ifra.git
+  sshPrivateKey: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
+    1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQQanLLCxWBwriArrCHXS1zh3QXRwSJw
+    /m7q9RBF1M/KQtlbLDj+BZxWGKDguuso8LLsg4IoCbgjlI1EUmUzYQ1aAAAAsCrTzr8q08
+    6/AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBqcssLFYHCuICus
+    IddLXOHdBdHBInD+bur1EEXUz8pC2VssOP4FnFYYoOC66yjwsuyDgigJuCOUjURSZTNhDV
+    oAAAAhAKd2iUdALBRw4CWknfMJbPtez/Hj+lOe/u2XKi/jTYyaAAAAFHZhbGRvczc3N21A
+    Z21haWwuY29tAQID
+    -----END OPENSSH PRIVATE KEY-----
